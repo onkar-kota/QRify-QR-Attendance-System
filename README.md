@@ -14,16 +14,39 @@ Here's how it works:
 ### 4. Libraries Used:
 - We leveraged helpful libraries like pyqrcode to generate QR codes easily, and qrtools to decode the scanned QR codes effectively.
 
-### Breakdown of the code [Code](https://github.com/onkar-kota/QRify/blob/main/QR_Attendance-main/QR_Attendance/Generate.py)
+### Breakdown of the [Code](https://github.com/onkar-kota/QRify/blob/main/QR_Attendance-main/QR_Attendance/Generate.py)
 
+1. Import necessary modules:
 ```
 from MyQR import myqr
 import os
-
 ```
 
+2. Open and read the 'students.txt' file:
+```
+f = open('D:/Coding Files/Coding Ninja/5. Projects/2. QR_Attendance/QR_Attendance-main/QR_Attendance/students.txt', 'r')
+lines = f.read().split("\n")
+print(lines)
+```
 
+3. Generate QR codes for each student and customize settings:
+```
+for _ in range(0, len(lines)):
+    data = lines[_]
+    version, level, qr = myqr.run(
+        str(data),
+        level='H',
+        version=1,
+        picture="D:/Coding Files/Coding Ninja/5. Projects/2. QR_Attendance/QR_Attendance-main/QR_Attendance/Bg.png",
+        colorized=True,
+        contrast=1.0,
+        brightness=1.0,
+        save_name=str(lines[_] + '.png'),
+        save_dir=os.getcwd()
+    )
 
+```
+This loop iterates through each line in the 'students.txt' file. It takes the current line (student data) and generates a QR code using the myqr.run function. It sets the error correction level to 'H' (high), version to 1, and specifies a background image ('Bg.png') for the QR code. The colorized, contrast, and brightness parameters are also used to customize the appearance of the QR code. The generated QR code is saved with the student's data as the filename (plus '.png') in the current working directory.
 
 
 # Benefits of the QR Attendance System:
