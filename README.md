@@ -14,6 +14,18 @@ Here's how it works:
 ### 4. Libraries Used:
 - We leveraged helpful libraries like pyqrcode to generate QR codes easily, and qrtools to decode the scanned QR codes effectively.
 
+### Breakdown of the code [Code](https://github.com/onkar-kota/QRify/blob/main/QR_Attendance-main/QR_Attendance/Generate.py)
+
+```
+from MyQR import myqr
+import os
+
+```
+
+
+
+
+
 # Benefits of the QR Attendance System:
 
 ### 1. Accuracy and Efficiency:
