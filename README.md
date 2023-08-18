@@ -19,7 +19,7 @@ Here's how it works:
 # Breakdown of the [Code](https://github.com/onkar-kota/QRify/blob/main/QR_Attendance-main/QR_Attendance/Generate.py)
 
 1. Import necessary modules:
-```
+```python
 from MyQR import myqr
 import os
 ```
