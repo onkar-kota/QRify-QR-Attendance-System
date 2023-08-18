@@ -1,3 +1,5 @@
+# QRify : QR Attendance System
+
 The QR Attendance System project is a clever solution to simplify attendance tracking using QR codes. We built this system with Python and SQL, which allowed us to automate the entire attendance management process.
 
 Here's how it works:
