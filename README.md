@@ -14,7 +14,7 @@ Here's how it works:
 ### 4. Libraries Used:
 - We leveraged helpful libraries like pyqrcode to generate QR codes easily, and qrtools to decode the scanned QR codes effectively.
 
-### Breakdown of the [Code](https://github.com/onkar-kota/QRify/blob/main/QR_Attendance-main/QR_Attendance/Generate.py)
+# Breakdown of the [Code](https://github.com/onkar-kota/QRify/blob/main/QR_Attendance-main/QR_Attendance/Generate.py)
 
 1. Import necessary modules:
 ```
