@@ -25,14 +25,14 @@ import os
 ```
 
 2. Open and read the 'students.txt' file:
-```
+```python
 f = open('D:/Coding Files/Coding Ninja/5. Projects/2. QR_Attendance/QR_Attendance-main/QR_Attendance/students.txt', 'r')
 lines = f.read().split("\n")
 print(lines)
 ```
 
 3. Generate QR codes for each student and customize settings:
-```
+```python
 for _ in range(0, len(lines)):
     data = lines[_]
     version, level, qr = myqr.run(
